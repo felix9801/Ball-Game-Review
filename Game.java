@@ -28,6 +28,7 @@ public class Game extends JPanel implements Runnable{
 	//The ball won't spawn in collision with the paddle
 	public boolean collided = false;
 	
+	//Ignore this 
 	public String randomString[] = {"God was that bad!", "Common you can do better!", "My grandma plays better!", "Really, is that it?"};
 	
 	Random r = new Random();
@@ -147,7 +148,9 @@ public class Game extends JPanel implements Runnable{
 		
 		try {
 				//Pauses the main thread for x milliseconds so the game won't be over in an instance
-				Thread.sleep(8);
+				//Normaly one would create a separate "game" thread since this will pause the entire program
+				//including the JFrame
+				Thread.sleep(10);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
