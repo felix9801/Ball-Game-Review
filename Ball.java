@@ -80,7 +80,7 @@ public class Ball {
 	public void render(Graphics2D g2d){
 		
 		//Make ball move smoother
-		//g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		
 		//Color
 		g2d.setColor(ballColor);
